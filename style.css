@@ -1,0 +1,344 @@
+:root {
+  --paper: #f7f4ec;
+  --grid: #c3d3e0;
+  --ink: #2c2c2c;
+  --ink-dim: #55554e;
+  --pen: #2f4d7a;
+  --pen-bright: #3d63a0;
+  --red: #b23a2e;
+  --tape: rgba(232, 223, 192, 0.75);
+  --sticky: #fff6c8;
+  --hand: 'Architects Daughter', cursive;
+  --type: 'Courier Prime', monospace;
+}
+
+html[data-theme="dark"] {
+  --paper: #1b1c17;
+  --grid: #34362c;
+  --ink: #e8e4d8;
+  --ink-dim: #a8a494;
+  --pen: #7fa8e0;
+  --pen-bright: #9dc0f0;
+  --red: #e0776a;
+  --tape: rgba(120, 112, 80, 0.55);
+  --sticky: #3a3720;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background:
+    repeating-linear-gradient(0deg, var(--grid) 0px, var(--grid) 1px, transparent 1px, transparent 26px),
+    repeating-linear-gradient(90deg, var(--grid) 0px, var(--grid) 1px, transparent 1px, transparent 26px),
+    var(--paper);
+  background-size: 26px 26px;
+  color: var(--ink);
+  font-family: var(--type);
+  line-height: 1.75;
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+a {
+  color: var(--pen);
+}
+
+.skip-link {
+  position: absolute;
+  left: -999px;
+  top: 0;
+  background: var(--red);
+  color: var(--paper);
+  padding: 0.7rem 1.2rem;
+  font-weight: 700;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  left: 1rem;
+  top: 1rem;
+}
+
+:focus-visible {
+  outline: 2px solid var(--red);
+  outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* -------- spiral binding + nav -------- */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  background: rgba(247, 244, 236, 0.95);
+  border-bottom: 1px solid rgba(44, 44, 44, 0.15);
+}
+
+.binding {
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  padding: 6px 0 4px;
+}
+
+.binding span {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--paper);
+  border: 2px solid var(--ink-dim);
+}
+
+.header-row {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 0.4rem 1rem 0.7rem;
+}
+
+.tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  flex-wrap: wrap;
+}
+
+.tabs a {
+  font-family: var(--hand);
+  font-size: 1.05rem;
+  text-decoration: none;
+  color: var(--ink-dim);
+  padding: 0.3rem 1rem;
+  border-bottom: 2px solid transparent;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+.tabs a:hover {
+  color: var(--pen);
+}
+
+main {
+  position: relative;
+}
+
+section {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 5.5rem 1.6rem;
+  position: relative;
+}
+
+.pencil-line {
+  width: 2px;
+  height: 3rem;
+  margin: 0 auto;
+  background: repeating-linear-gradient(0deg, var(--ink-dim) 0 6px, transparent 6px 11px);
+  opacity: 0.6;
+}
+
+/* -------- HOME -------- */
+#home {
+  min-height: 72vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  padding-top: 4rem;
+}
+
+h1 {
+  font-family: var(--hand);
+  font-size: clamp(2.6rem, 8vw, 4.4rem);
+  color: var(--ink);
+}
+
+.hero-underline {
+  width: 140px;
+  height: 6px;
+  margin: 0.3rem auto 0;
+  background: var(--red);
+  opacity: 0.6;
+  transform: rotate(-1deg);
+}
+
+.hero-role {
+  margin-top: 1rem;
+  font-family: var(--hand);
+  font-size: 1.15rem;
+  color: var(--pen);
+}
+
+.hero-desc {
+  margin-top: 1.4rem;
+  color: var(--ink-dim);
+  font-size: 0.95rem;
+  max-width: 46ch;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-cta {
+  margin-top: 2rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  font-family: var(--hand);
+  font-size: 1rem;
+  text-decoration: none;
+  padding: 0.5rem 1.3rem;
+  border: 2px solid var(--ink);
+  border-radius: 6px 8px 7px 9px / 8px 6px 9px 7px;
+  color: var(--ink);
+  background: transparent;
+  transition: all 0.2s ease;
+}
+
+.btn:hover {
+  border-color: var(--pen);
+  color: var(--pen);
+}
+
+.btn.primary {
+  background: var(--pen);
+  border-color: var(--pen);
+  color: var(--paper);
+  font-weight: 700;
+}
+
+.btn.primary:hover {
+  background: var(--pen-bright);
+  border-color: var(--pen-bright);
+}
+
+/* -------- currently sticky, sits under hero -------- */
+.currently {
+  max-width: 380px;
+  margin: 2.4rem auto 0;
+  background: var(--sticky);
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 2px 3px 8px rgba(0, 0, 0, 0.1);
+  padding: 0.9rem 1.1rem;
+  transform: rotate(1deg);
+  text-align: left;
+  font-size: 0.85rem;
+}
+
+.currently .label {
+  font-family: var(--hand);
+  color: var(--red);
+  font-size: 0.85rem;
+  margin-bottom: 0.3rem;
+}
+
+.currently p {
+  color: var(--ink);
+}
+
+/* -------- section headings -------- */
+.sec-label {
+  display: flex;
+  align-items: baseline;
+  gap: 0.7rem;
+  margin-bottom: 2.2rem;
+}
+
+.sec-label .num {
+  font-family: var(--hand);
+  color: var(--red);
+  font-size: 1.1rem;
+}
+
+h2 {
+  font-family: var(--hand);
+  font-size: 1.7rem;
+  letter-spacing: 0.01em;
+  color: var(--ink);
+}
+
+/* -------- ABOUT with margin notes -------- */
+#about {
+  position: relative;
+}
+
+#about p {
+  color: var(--ink);
+  font-size: 0.98rem;
+  margin-bottom: 1.5rem;
+  max-width: 56ch;
+}
+
+#about strong {
+  color: var(--pen);
+  font-weight: 700;
+}
+
+.note-wrap {
+  position: relative;
+}
+
+.margin-note {
+  display: none;
+}
+
+@media (min-width: 900px) {
+  section#about {
+    max-width: 900px;
+  }
+
+  .note-wrap {
+    padding-right: 190px;
+  }
+
+  .margin-note {
+    display: block;
+    position: absolute;
+    right: 0;
+    width: 165px;
+    font-family: var(--hand);
+    font-size: 0.92rem;
+    color: var(--red);
+    transform: rotate(-2deg);
+    line-height: 1.4;
+  }
+
+  .margin-note svg {
+    position: absolute;
+    top: -18px;
+    left: -34px;
+  }
+}
+
+.inline-note {
+  font-family: var(--hand);
+  font-size: 0.92rem;
+  color: var(--red);
+  margin-bottom: 1rem;
+  padding-left: 0.8rem;
+  border-left: 2px dashed var(--red);
+}
+
+@media (min-width: 900px) {
+  .inline-note {
+    display: none;
+  }
+}
