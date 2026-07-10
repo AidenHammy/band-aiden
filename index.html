@@ -103,9 +103,140 @@
           computers and a lot of collapsed towers along the way. It's the same curiosity that has me picking apart a
           circuit or a bug instead of just accepting that it works.. gulp.</p>
       </div>
+
+      <div class="note-wrap">
+        <div class="margin-note">
+          <svg width="42" height="32" viewBox="0 0 42 32">
+            <defs>
+              <marker id="arrow" markerWidth="8" markerHeight="8" refX="2" refY="4" orient="auto" markerUnits="strokeWidth">
+                <path d="M8 4 L1 1 L3 4 L1 7 Z" fill="currentColor" />
+              </marker>
+            </defs>
+
+            <path d="M38 4 C26 8, 18 12, 8 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"
+            marker-end="url(#arrow)" />
+          </svg>
+          how I actually build
+        </div>
+        <p class="inline-note">↳ how I actually build</p>
+        <p>I don't really stick to one kind of project. Most of them begin as ideas that seem simple enough then slowly grow
+          into something much bigger than I expected. I enjoy figuring out things out as I go even if it means rewriting, 
+          experimenting and occasionally wondering why I thought the idea was "small" in the first place. If a project isn't 
+          finished, I'd rather say that plainly than pretend it's further along than it really is. I build because I'm curious.
+          Some ideas stay small, some spiral into much bigger projects and a few never make it past the sketchbook. That's part
+          of the process! (I hope)
+        </p>
+      </div>
+
+      <div class="toolkit">
+        <div class="toolkit-title">↪ what's actually in the toolbox</div>
+        <ul>
+          <li><span class="tick"></span> JavaScript / Node.js - for the caffeine-powered sessions</li>
+          <li><span class="tick"></span> C - for projects that never see the light of day</li>
+          <li><span class="tick"></span> HTML/CSS - for the webOS interactive window</li>
+          <li><span class="tick"></span> Electronics Engineering coursework - ongoing</li>
+        </ul>
+      </div>
     </section>
+
+    <div class="pencil-line"></div>
+
+    <section id="projects">
+      <div class="sec-label"><span class="num">02 -</span>
+      <h2 id="projects-heading">Projects</h2>
+      </div>
+
+      <div class="entry">
+        <div class="checkbox checked"></div>
+        <div class="entry-body">
+          <div class="entry-head">
+            <h3>CLI Calculator</h3>
+            <span class="status">shipped</span>
+          </div>
+          <p>A command-line calculator with scientific/advanced functions - not just the four basic operations
+            but the kind of thing you'd actually reach for over a phone calculator app.
+          </p>
+          <div class="margin-comment">Simple on the surface but getting operator precedence and function parsing
+            right without a library was the actual exercise.
+          </div>
+          <div class="tags"><span>Node.js</span><span>CLI</span></div>
+          <div class="entry-links">
+            <a href="https://github.com/AidenHammy/cli-calculator" target="_blank">Repository</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="checkbox checked"></div>
+        <div class="entry-body">
+          <div class="entry-head">
+            <h3>AuriaOS (webOS)</h3>
+            <span class="status">shipped, in progress</span>
+          </div>
+          <p>A browser-based simulation of a desktop operating system. Draggable windows, a taskbar
+            a working window manager, resizing & window snapping, ghost window, a terminal and the
+            shell of something that looks like an OS.
+          </p>
+          <div class="margin-comment">Right now it's a shell with nowhere to go. Windows, a taskbar
+            and only TWO working apps but no real push yet. That's the actual next step, not more chrome.
+          </div>
+          <div class="tags"><span>HTML/CSS</span><span>JavaScript</span></div>
+          <div class="entry-links">
+            <a href="https://github.com/AidenHammy/auria-os" target="_blank">Repository</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="checkbox half"></div>
+        <div class="entry-body">
+          <div class="entry-head">
+            <h3>Solar System Simulator</h3>
+            <span class="status">learning project</span>
+          </div>
+          <p>
+            An orbital simulator in Unity, built while learning C# from nothing. Velocity Verlet integration
+            and an AU-based unit system so the orbits are physically correct not just visually plausible,
+            plus a full HUD built entirely in code. It's temporarily paused since I find it difficult and
+            it takes me a lot of time to understand and apply it. Due to my college, I'm not getting
+            enough time to learn anything else other than the coursework. 
+          </p>
+          <div class="margin-comment">Needed step-by-step guidance for most of it - kept in the portfolio because
+            it's the clearest record of learning a language and a physics model at the same time, mistakes included.
+          </div>
+          <div class="tags"><span>C#</span><span>Unity</span></div>
+          <div class="entry-links">
+            <a>No repository yet</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="entry">
+        <div class="checkbox half"></div>
+        <div class="entry-body">
+          <div class="entry-head">
+            <h3>SlackyssaLiu</h3>
+            <span class="status">ongoing, not shipped</span>
+          </div>
+          <p>
+            A Slack bot running on socket mode with ten slash commands. Recently refactored it
+            into two files - one for routing, one for the command logic, sharing a single response
+            helper instead of repeating the same fetch-and-reply pattern ten times. Haven't shipped it
+            yet cuz I feel lazy about it.
+          </p>
+          <div class="margin-comment">
+            Kept the refactor deliberately plain. No abstraction it doesn't need yet. Small but it's
+            the project I'm pickiest about.
+          </div>
+          <div class="tags"><span>Node.js</span><span>@slack/bolt</span><span>Socket Mode</span></div>
+          <div class="entry-links">
+            <a href="https://github.com/AidenHammy/SlackyssaLiu" target="_blank">Repository</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
 </body>
-
 </html>

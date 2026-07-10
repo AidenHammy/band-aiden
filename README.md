@@ -4,7 +4,7 @@
 
 This repository contains the source code for my personal website.
 
-I wanted it to feel less like a portfolio and more like flipping through someone's notebook—graph paper, handwritten annotations, messy arrows in the margins and little thoughts scattered between projects. The goal wasn't to make everything look perfect. It was to make it feel personal.
+I wanted it to feel less like a portfolio and more like flipping through someone's notebook graph paper, handwritten annotations, messy arrows in the margins and little thoughts scattered between projects. The goal wasn't to make everything look perfect. It was to make it feel personal.
 
 The funny thing is that the design took longer than the code.
 
