@@ -1,6 +1,6 @@
 # Notebook
 
-> *"A notebook is rarely neat. That's kind of the point."*
+> *"A notebook is rarely neat. That's kind of the point!"*
 
 This repository contains the source code for my personal website.
 
@@ -25,8 +25,8 @@ Not because it was technically difficult but because translating the chaos of my
 ## Running locally
 
 ```bash
-git clone https://github.com/<username>/<repo>.git
-cd <repo>
+git clone https://github.com/AidenHammy/band-aiden.git
+cd band-aiden
 ```
 
 Then open `index.html` in your browser, or use any local development server.
