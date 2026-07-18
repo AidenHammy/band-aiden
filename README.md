@@ -4,7 +4,7 @@
 
 This repository contains the source code for my personal website.
 
-I wanted it to feel less like a portfolio and more like flipping through someone's notebook graph paper, handwritten annotations, messy arrows in the margins and little thoughts scattered between projects. The goal wasn't to make everything look perfect. It was to make it feel personal.
+I wanted it to feel less like a portfolio and more like flipping through someone's notebook, maybe a graph paper, handwritten annotations, messy arrows in the margins and little thoughts scattered between projects. The goal wasn't to make everything look perfect. It was to make it feel personal.
 
 The funny thing is that the design took longer than the code.
 
@@ -21,6 +21,7 @@ Not because it was technically difficult but because translating the chaos of my
 
 - HTML
 - CSS
+- JavaScript (a pinch)
 
 ## Running locally
 
@@ -29,11 +30,11 @@ git clone https://github.com/AidenHammy/band-aiden.git
 cd band-aiden
 ```
 
-Then open `index.html` in your browser, or use any local development server.
+Then open `index.html` in your browser or use any local development server. And oh by the way, `style.css` and `script.js` need to stay in the same folder as `index.html`! 
 
 ## A note on AI
 
-Like most of my projects, AI was part of the workflow, not the destination. It helped me brainstorm, debug and occasionally rescue me from problems I'd spent far too long staring at. Every design decision, iteration and final choice was still mine.
+Like most of my projects, AI was part of the workflow not the destination. It helped me brainstorm, debug and occasionally rescue me from problems I'd spent far too long staring at. Every design decision, iteration and final choice was still mine.
 
 ---
 
