@@ -12,6 +12,9 @@
 </head>
 
 <body>
+  
+  <div class="rail left"></div>
+  <div class="rail right"></div>
 
   <header>
     <div class="binding">
@@ -52,6 +55,7 @@
     </section>
 
     <div class="pencil-line"></div>
+    <div class="pinned-tape"></div>
 
     <section id="about">
       <div class="sec-label"><span class="num"><b>01 -</b></span>
@@ -145,6 +149,7 @@
     </section>
 
     <div class="pencil-line"></div>
+    <div class="pinned-tape" style="transform: rotate(6deg);"></div>
 
     <section id="projects">
       <div class="sec-label"><span class="num"><b>02 -</b></span>
@@ -242,29 +247,30 @@
     </section>
 
     <div class="pencil-line"></div>
+    <div class="pinned-tape" style="transform: rotate(-10deg);"></div>
 
     <section id="marginalia">
       <div class="sec-label"><span class="num"><b>03 -</b></span>
         <h2 id="marginalia-heading">Marginalia</h2>
       </div>
 
-      <div class="toolkit" style="max-width: 800px;">
-        <div class="toolkit-title">↪ currently reading</div>
-        <ul>
-          <li><span class="tick"></span>Design Thinking because "we'll figure it out later" has a 0% success rate</li>
-          <li><span class="tick"></span>German, self-taught - trusting the process (the process is grammar drills)</li>
-          <li><span class="tick"></span>Marcus Aurelius, Meditations - one chapter at a time because bro did not believe in short paragraphs</li>
-          <li><span class="tick"></span>Semiconductors - all this... because someone doped sand</li>
-        </ul>
+      <div class="reading-stack">
+        <div class="card" style="--rotation: -4deg;">Design Thinking because "we'll figure it out later" has a 0% success rate</div>
+        <div class="card" style="--rotation: 3deg;">German, self-taught, trusting the process (the process is grammar drills)</div>
+        <div class="card" style="--rotation: -1.5deg;">Marcus Aurelius, Meditations - one chapter at a time because bro did not believe in short paragraphs</div>
+        <div class="card" style="--rotation: 2.5deg;">Semiconductors and all that.. because someone doped sand</div>
       </div>
 
-      <div class="currently" style="margin: 2rem 0 0;">
-        <div class="label">⤷ colophon</div>
-        <p>Built in VS Code, hosted on Github Pages. Set in Architects Daughter and Courier Prime.</p>
+      <div class="colophon">
+        <span class="mark">❦</span>
+        Built in VS Code because it's where I feel at home! <br>
+        GitHub Pages gave it somewhere to live. Architects Daughter did the handwriting and Courier Prime made sure it stayed readable.
       </div>
     </section>
 
   </main>
+
+  <script src="script.js"></script>
 
 </body>
 </html>
