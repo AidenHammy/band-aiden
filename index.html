@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <meta charset="UTF-8">
@@ -12,7 +12,15 @@
 </head>
 
 <body>
-  
+
+  <svg width="0" height="0" style="position: absolute;">
+    <defs>
+      <marker id="note-arrow" markerWidth="8" markerHeight="8" refX="2" refY="4" orient="auto" markerUnits="strokeWidth">
+        <path d="M8 4 L1 1 L3 4 L1 7 Z" fill="currentColor" />
+      </marker>
+    </defs>
+  </svg>
+
   <div class="rail left"></div>
   <div class="rail right"></div>
 
@@ -26,7 +34,7 @@
         <a href="#about">About</a>
         <a href="#projects">Projects</a>
         <a href="#marginalia">Marginalia</a>
-        <a href="https://youtu.be/QDia3e12czc" target="_blank" class="secret">???<span class="tooltip">find out.</span></a>
+        <a href="https://youtu.be/QDia3e12czc" target="_blank" rel="noopener noreferrer" class="secret">???<span class="tooltip">find out.</span></a>
       </nav>
     </div>
   </header>
@@ -65,15 +73,8 @@
       <div class="note-wrap">
         <div class="margin-note">
           <svg width="42" height="32" viewBox="0 0 42 32">
-            <defs>
-              <marker id="arrow" markerWidth="8" markerHeight="8" refX="2" refY="4" orient="auto" markerUnits="strokeWidth">
-          
-                <path d="M8 4 L1 1 L3 4 L1 7 Z" fill="currentColor" />
-              </marker>
-            </defs>
-          
             <path d="M38 4 C26 8, 18 12, 8 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"
-              marker-end="url(#arrow)" />
+              marker-end="url(#note-arrow)" />
           </svg>
           who I actually am
         </div>
@@ -87,15 +88,8 @@
       <div class="note-wrap">
         <div class="margin-note">
           <svg width="42" height="32" viewBox="0 0 42 32">
-            <defs>
-              <marker id="arrow" markerWidth="8" markerHeight="8" refX="2" refY="4" orient="auto" markerUnits="strokeWidth">
-          
-                <path d="M8 4 L1 1 L3 4 L1 7 Z" fill="currentColor" />
-              </marker>
-            </defs>
-          
             <path d="M38 4 C26 8, 18 12, 8 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"
-              marker-end="url(#arrow)" />
+              marker-end="url(#note-arrow)" />
           </svg>
           the real hobby
         </div>
@@ -110,14 +104,8 @@
       <div class="note-wrap">
         <div class="margin-note">
           <svg width="42" height="32" viewBox="0 0 42 32">
-            <defs>
-              <marker id="arrow" markerWidth="8" markerHeight="8" refX="2" refY="4" orient="auto" markerUnits="strokeWidth">
-                <path d="M8 4 L1 1 L3 4 L1 7 Z" fill="currentColor" />
-              </marker>
-            </defs>
-
             <path d="M38 4 C26 8, 18 12, 8 24" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" fill="none"
-            marker-end="url(#arrow)" />
+            marker-end="url(#note-arrow)" />
           </svg>
           how I actually build
         </div>
@@ -171,7 +159,7 @@
           </div>
           <div class="tags"><span>Node.js</span><span>CLI</span></div>
           <div class="entry-links">
-            <a href="https://github.com/AidenHammy/cli-calculator" target="_blank">Repository</a>
+            <a href="https://github.com/AidenHammy/cli-calculator" target="_blank" rel="noopener noreferrer">Repository</a>
           </div>
         </div>
       </div>
@@ -192,7 +180,7 @@
           </div>
           <div class="tags"><span>HTML/CSS</span><span>JavaScript</span></div>
           <div class="entry-links">
-            <a href="https://github.com/AidenHammy/auria-os" target="_blank">Repository</a>
+            <a href="https://github.com/AidenHammy/auria-os" target="_blank" rel="noopener noreferrer">Repository</a>
           </div>
         </div>
       </div>
@@ -216,7 +204,7 @@
           </div>
           <div class="tags"><span>C#</span><span>Unity</span></div>
           <div class="entry-links">
-            <a>No repository yet</a>
+            <span class="no-repo">No repository yet</span>
           </div>
         </div>
       </div>
@@ -240,7 +228,7 @@
           </div>
           <div class="tags"><span>Node.js</span><span>@slack/bolt</span><span>Socket Mode</span></div>
           <div class="entry-links">
-            <a href="https://github.com/AidenHammy/SlackyssaLiu" target="_blank">Repository</a>
+            <a href="https://github.com/AidenHammy/SlackyssaLiu" target="_blank" rel="noopener noreferrer">Repository</a>
           </div>
         </div>
       </div>
