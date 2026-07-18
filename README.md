@@ -30,7 +30,7 @@ git clone https://github.com/AidenHammy/band-aiden.git
 cd band-aiden
 ```
 
-Then open `index.html` in your browser or use any local development server. And oh by the way, `style.css` and `script.js` need to stay in the same folder as `index.html`! 
+Then open `index.html` in your browser or use any local development server. And oh by the way, `style.css` and `script.js` need to stay in the same folder as `index.html`!
 
 ## A note on AI
 
